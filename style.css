@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*useing border box because when I come to apply margin or padging or something it takes a part from hight and width of the part that i'm working on does not add anything to them */
+    /* content-box adds more hight and width on the part we are working on when applying margin or padging  or whatever*/
+    
+
+}
+
+body{
+    font-family: "PT Serif", serif;  /*font type*/
+    position: relative; /* This positions the element relative to its normal position. */
+    height: 100vh;
+    background-image: url('./517528.jpg'); /* to add image to the background */
+    background-size: cover; /* to make the image cover the entire container */
+    background-position: center; /* to make the image in the center of the container */
+}
+
+a{
+    text-decoration: none; /* text without lines or any decoration */
+}
+.container{
+    position: absolute; /* This positions the element relative to the nearest positioned ancestor. If no positioned ancestors exist, it's positioned relative to the document body. */
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+    height: 80%;
+    text-align: center;
+    
+}
+
+.card{
+    border: 1px solid #ccc; /* to add border around the card */
+    box-shadow: 0 2px 5px rgb(255, 255, 255); /* box shadow to add shadow around the card */
+    border-radius: 10px;  /* border radius to make round corners */
+    background-color: whitesmoke; /* to add color to the background of the card */
+}
+
+.image img {
+    width: 170px;
+    height: 170px; 
+    object-fit: cover; /* This will ensure the image covers the full area of the div without distorting the aspect ratio */
+    /* to make the image in circle */
+    border-radius: 50%; 
+    /* to move the image down */
+    margin-top: 50px;
+    /* border: 2px solid whitesmoke; 
+    /* box shadow to add shadow around the card */
+    box-shadow: 0 2px 5px rgb(255, 255, 255);
+    
+}
+
+.image{
+    /* border radius to make round corners */
+    border-radius: 10px;
+    background-color: rgb(3, 14, 66);
+    /* box shadow to add shadow around the card */
+    box-shadow: 0 2px 5px rgb(3, 14, 66);
+}
+
+.text{
+    margin: 30px 70px;
+    justify-content: center; /* This centers the text horizontally */
+    align-items: center; /* This centers the text vertically */
+}
+
+.text h1 {
+    margin-bottom: 20px;  /*to add space after h1*/
+}
+.text h2 {
+    margin-bottom: 20px;  /*to add space after h2*/
+}
+
+.icons img, .icons i, .icons span { /*To control the icon space*/
+    font-size: 45px; /* If the icons are Font Awesome icons or similar */
+    width: 50px; /* If the icons are image elements */
+    height: 50px; /* If the icons are image elements */
+}
+
+.icons { 
+    margin-bottom: 20px; /*to add space after the icons*/
+}
+
+.button button{
+    background-color: rgb(3, 14, 66);
+    width: 70%;
+    height: 50px;
+    margin-bottom: 40px; /*to add space after the button*/
+    color: white; /*text color inside the button*/
+    border-radius: 10px; /* border radius to make round corners */
+    font-size: larger; 
+    box-shadow: 0 2px 5px rgb(3, 14, 66); /*to add shadow around the button*/
+    transition: background-color 0.5s ease; /* to change the color of the button when the mouse is on it */
+}
+.button button:hover {
+    background-color: rgb(35, 61, 174); /* to make the button color lighter */
+}
